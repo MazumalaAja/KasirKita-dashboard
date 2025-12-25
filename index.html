@@ -26,23 +26,82 @@
 
           <!-- PART-2 DESKTOP-->
           <div
-               class="p-3 fixed bottom-0 left-0 right-0 sm:static bg-white sm:p-0 flex justify-between items-center gap-2">
+               class="p-3 fixed bottom-0 left-0 right-0 sm:static bg-white border border-gray-300 sm:p-0 flex justify-between items-center gap-2">
                <!-- NOTIFICATION -->
                <div class="cursor-pointer">
                     <i class="bi bi-bell text-gray-400"></i>
                </div>
                <!-- INPUT-SERACH -->
                <div class="border border-gray-200 p-1 px-2 rounded-sm">
-                    <input class="focus:outline-0 text-[0.7rem] sm:text-[1rem]" type="text" placeholder="Search...">
+                    <input class="focus:outline-0 text-[0.8rem] sm:text-[1rem]" type="text" placeholder="Search...">
                     <i class="bi bi-search text-gray-400 text-[0.75rem] sm:text-[1rem]"></i>
                </div>
                <!-- PHOTO -->
-               <div class="w-[2rem] h-[2rem] rounded-full overflow-hidden cursor-pointer">
+               <div class="hidden sm:block w-[2rem] h-[2rem] rounded-full overflow-hidden cursor-pointer">
                     <img src="./assets/avatar.webp" alt="">
                </div>
           </div>
      </header>
      <!-- HEADER END-->
+
+     <!-- SIDEBAR START -->
+     <aside
+          class="bg-white z-[998] rounded-sm shadow-sm fixed left-0 bottom-0 top-[3.5rem] sm:top-[4.2rem] sm:bottom-1 sm:left-1 w-72 p-3 overflow-auto">
+          <nav>
+               <ul class="space-y-2">
+                    <li
+                         class="flex bg-[var(--main)] text-[var(--text-dark)] items-center gap-3 rounded-sm duration-[200ms] hover:bg-[var(--main)] hover:text-[var(--text-dark)] p-1 px-2">
+                         <a href="">
+                              <i class="bi bi-app-indicator"></i>
+                              <span>Dashboard</span>
+                         </a>
+                    </li>
+                    <li
+                         class="flex items-center gap-3 rounded-sm duration-[200ms] hover:bg-[var(--main)] hover:text-[var(--text-dark)] p-1 px-2">
+                         <a href="">
+                              <i class="bi bi-person"></i>
+                              <span>Profile</span>
+                         </a>
+                    </li>
+                    <li
+                         class="flex items-center gap-3 rounded-sm duration-[200ms] hover:bg-[var(--main)] hover:text-[var(--text-dark)] p-1 px-2">
+                         <a href="">
+                              <i class="bi bi-people"></i>
+                              <span>Users Management</span>
+                         </a>
+                    </li>
+                    <li
+                         class="flex items-center gap-3 rounded-sm duration-[200ms] hover:bg-[var(--main)] hover:text-[var(--text-dark)] p-1 px-2">
+                         <a href="">
+                              <i class="bi bi-boxes"></i>
+                              <span>Products Management</span>
+                         </a>
+                    </li>
+                    <li
+                         class="flex items-center gap-3 rounded-sm duration-[200ms] hover:bg-[var(--main)] hover:text-[var(--text-dark)] p-1 px-2">
+                         <a href="">
+                              <i class="bi bi-bar-chart"></i>
+                              <span>Statistics</span>
+                         </a>
+                    </li>
+                    <li
+                         class="flex items-center gap-3 rounded-sm duration-[200ms] hover:bg-[var(--main)] hover:text-[var(--text-dark)] p-1 px-2">
+                         <a href="">
+                              <i class="bi bi-clock-history"></i>
+                              <span>Histories</span>
+                         </a>
+                    </li>
+                    <li
+                         class="flex items-center gap-3 rounded-sm duration-[200ms] hover:bg-[var(--main)] hover:text-[var(--text-dark)] p-1 px-2">
+                         <a href="">
+                              <i class="bi bi-app-indicator"></i>
+                              <span>Dashboard</span>
+                         </a>
+                    </li>
+               </ul>
+          </nav>
+     </aside>
+     <!-- SIDEBAR END -->
 
      <!-- IF SCREEN < 250 -->
      <div class="blocked capitalize font-medium bg-gray-400 z-[99999] hidden fixed top-0 lef-0 right-0 bottom-0 p-3">
