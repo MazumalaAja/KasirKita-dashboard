@@ -12,6 +12,7 @@
      --text-dark:#fff;
 }
 
+
 /* ===== BODY ===== */
 body {
      font-family: "poppins" ,Arial, Helvetica, sans-serif !important;
@@ -24,4 +25,8 @@ body {
           display: flex !important;
           justify-content: center;
      }
+}
+
+.active {
+     left: -200%;
 }
