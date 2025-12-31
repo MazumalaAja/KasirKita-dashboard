@@ -40,6 +40,10 @@ body {
 
 .table-body tr:nth-child(even) p {
      background-color: rgb(144, 215, 38);
+     cursor: pointer;
+     &:hover {
+           background-color: rgb(112, 170, 25);
+     }
 }
 
 /* ===== MEDIA-QUERIES ===== */

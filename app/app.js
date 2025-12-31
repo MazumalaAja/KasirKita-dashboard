@@ -50,7 +50,7 @@ dataTable.forEach((item) => {
                               <td class="capitalize">${item.customer}</td>
                               <td>${item.total}</td>
                               <td>
-                              <p class="bg-indigo-300 p-1 w-max rounded-full px-3 text-white">${item.method}</p>
+                              <p class="cursor-pointer bg-indigo-300 hover:bg-indigo-500 p-1 w-max rounded-full px-3 text-white">${item.method}</p>
                               </td>
                          </tr>`
 })

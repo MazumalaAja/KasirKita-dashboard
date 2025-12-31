@@ -55,14 +55,14 @@
           <nav>
                <ul class="space-y-2">
                     <li
-                         class="bg-[var(--main)] text-[var(--text-dark)] rounded-sm duration-[200ms] hover:bg-[var(--main)] hover:text-[var(--text-dark)] p-1.5 px-2.5">
+                         class=" rounded-sm duration-[200ms] hover:bg-[var(--main)] hover:text-[var(--text-dark)] p-1.5 px-2.5">
                          <a href="./index.html" class="flex items-center gap-3">
                               <i class="bi bi-app-indicator"></i>
                               <span>Dashboard</span>
                          </a>
                     </li>
                     <li
-                         class="rounded-sm duration-[200ms] hover:bg-[var(--main)] hover:text-[var(--text-dark)] p-1.5 px-2.5">
+                         class=" bg-[var(--main)] text-[var(--text-dark)] rounded-sm duration-[200ms] hover:bg-[var(--main)] hover:text-[var(--text-dark)] p-1.5 px-2.5">
                          <a href="./profile.html" class="flex items-center gap-3">
                               <i class="bi bi-person"></i>
                               <span>Profile</span>
@@ -109,35 +109,47 @@
      <!-- SIDEBAR END -->
 
      <main
-          class="pb-[3rem] fixed z-[99] w-[calc(100%-1%)] sm:w-[calc(100%-19rem)] overflow-auto top-[3.8rem] sm:top-[4.3rem] right-1 bottom-1 bg-[salmon] bg-transparent p-3">
-          <div class="flex gap-3 items-center mb-2">
-               <i class="bi bi-house text-xl"></i>
-               <h3 class="text-xl font-medium">Dashboard</h3>
+          class="pb-[3rem] fixed z-[99] w-[calc(100%-1%)] sm:w-[calc(100%-19rem)] overflow-auto top-[3.8rem] sm:top-[4.3rem] right-1 bottom-1 bg-[salmon] bg-transparent p-3 space-y-5">
+          <div class="w-max mx-auto relative">
+               <img class="w-[15rem]  h-[15rem] rounded-full border-5 border-white shadow-md" src="./assets/avatar.webp"
+                    alt="">
+               <div
+                    class="hover:bg-green-700 absolute bottom-2 right-2 rounded-full px-3 py-2 bg-green-500 cursor-pointer flex justify-center items-center text-white border-white border-3">
+                    <i class="bi bi-camera text-3xl"></i>
+               </div>
           </div>
-          <div class="dashboard-item flex gap-3 flex-wrap mb-5">
+          <div class="mx-auto text-center">
+               <h1 class="text-2xl font-medium">Muhammad Azumal Aulia</h1>
+               <span>Cashier / Employee</span>
           </div>
-          <div class="flex gap-3 items-center mb-2">
-               <i class="bi bi-clock-history text-xl"></i>
-               <h3 class="text-xl font-medium">Transaction histories</h3>
-          </div>
-          <div class="table-data bg-white rounded-sm shadow-sm w-full mb-5 p-3">
-               <button
-                    class="bg-[var(--main)] px-2.5 hover:bg-[var(--main-dark)] cursor-pointer py-1.5 rounded-sm text-white shadow-sm">View
-                    all histories</button>
-               <table class="w-full">
-                    <thead>
-                         <tr>
-                              <td class="font-medium">Id</td>
-                              <td class="font-medium">Date</td>
-                              <td class="font-medium">Customer</td>
-                              <td class="font-medium">Cashier</td>
-                              <td class="font-medium">Total Purchase</td>
-                              <td class="font-medium">Payment method</td>
-                         </tr>
-                    </thead>
-                    <tbody class="table-body">
-                    </tbody>
-               </table>
+
+          <div
+               class="bg-white rounded-sm shadow-sm w-full h-full p-3 ring-2 ring-offset-3 ring-offset-gray-200 ring-white">
+               <div class="navigation border-b-2 border-gray-200 flex justify-between gap-3 p-3">
+                    <button
+                         class="bg-indigo-500 ring-2 ring-indigo-500 ring-offset-2 hover:ring-2 hover:ring-offset-2 hover:ring-indigo-500 flex items-center gap-3 justify-center cursor-pointer text-white rounded-full hover:bg-indigo-500 flex-1 p-3 ">
+                         <i class="bi bi-person"></i>
+                         <span>Personal Data</span>
+                    </button>
+                    <button
+                         class="bg-indigo-300 hover:ring-2 hover:ring-offset-2 hover:ring-indigo-500 cursor-pointer text-white rounded-full hover:bg-indigo-500 flex-1 p-3 ">
+                         <i class="bi bi-chart"></i>
+                         <span>Statistics</span>
+                    </button>
+               </div>
+
+               <div>
+                    <form action="">
+                         <div>
+                              <i class="bi bi-person"></i>
+                              <input type="text" placeholder="Username..." value="Muhammad Azumal Aulia">
+                         </div>
+                         <div>
+                              <i class="bi bi-envelope"></i>
+                              <input type="text" placeholder="Email..." value="zumal@gmail.com">
+                         </div>
+                    </form>
+               </div>
           </div>
      </main>
 
