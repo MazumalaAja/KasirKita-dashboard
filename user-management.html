@@ -118,12 +118,12 @@
      <!-- SIDEBAR END -->
 
      <main
-          class="text-[85%] md:text-[100%] pb-[30%] fixed z-99 w-[calc(100%-1%)] sm:w-[calc(100%-19rem)] overflow-auto top-[3.8rem] sm:top-[4.3rem] right-1 bottom-1 bg-transparent p-0 sm:p-3 space-y-5">
+          class="text-[85%] md:text-[100%] pb-[30%] fixed z-99 w-[calc(100%-1%)] sm:w-[calc(100%-19rem)] overflow-auto top-[3.8rem] sm:top-[4.3rem] right-1 bottom-1 bg-transparent p-2 sm:p-3 space-y-5">
           <button
                class="bg-indigo-500 ring-2 ring-indigo-500 ring-offset-2 ring-offset-gray-200 hover:ring-indigo-600 hover:bg-indigo-600 text-white px-3 py-1.5 rounded-sm cursor-pointer">Add
                User</button>
-          <div class=" bg-white p-3 rounded-sm shadow-sm">
-               <div class="flex justify-between">
+          <div class=" bg-white p-3 rounded-sm shadow-sm overflow-x-auto">
+               <div class="flex justify-between gap-3">
                     <select
                          class="border-gray-300 border focus:outline-0 px-10 py-0.5 rounded-sm appearance-none text-center"
                          name="" id="">
@@ -138,7 +138,7 @@
                          <i class="bi bi-search text-gray-400"></i>
                     </div>
                </div>
-               <table class="w-full">
+               <table class="min-w-xl w-full">
                     <thead>
                          <tr>
                               <th>
@@ -158,21 +158,21 @@
           </div>
 
           <div class="flex justify-center">
-               <div class="flex bg-white shadow-sm rounded-md">
+               <div class="flex flex-wrap justify-center">
                     <a href="#"
-                         class="px-4 py-1.5 outline-1 outline-gray-200 hover:text-white hover:bg-[var(--main)] rounded-s-md">prev</a>
+                         class="px-4 py-1.5 bg-white outline-1 outline-gray-200 hover:text-white hover:bg-[var(--main)] rounded-s-md">prev</a>
                     <a href="#"
-                         class="px-4 py-1.5 outline-1 outline-gray-200 hover:text-white hover:bg-[var(--main)]">1</a>
+                         class="px-4 py-1.5 bg-white outline-1 outline-gray-200 hover:text-white hover:bg-[var(--main)]">1</a>
                     <a href="#"
-                         class="px-4 py-1.5 outline-1 outline-gray-200 hover:text-white hover:bg-[var(--main)]">2</a>
+                         class="px-4 py-1.5 bg-white outline-1 outline-gray-200 hover:text-white hover:bg-[var(--main)]">2</a>
                     <a href="#"
-                         class="px-4 py-1.5 outline-1 outline-gray-200 hover:text-white hover:bg-[var(--main)]">3</a>
+                         class="px-4 py-1.5 bg-white outline-1 outline-gray-200 hover:text-white hover:bg-[var(--main)]">3</a>
                     <a href="#"
-                         class="px-4 py-1.5 outline-1 outline-gray-200 hover:text-white hover:bg-[var(--main)]">4</a>
+                         class="px-4 py-1.5 bg-white outline-1 outline-gray-200 hover:text-white hover:bg-[var(--main)]">4</a>
                     <a href="#"
-                         class="px-4 py-1.5 outline-1 outline-gray-200 hover:text-white hover:bg-[var(--main)]">5</a>
+                         class="px-4 py-1.5 bg-white outline-1 outline-gray-200 hover:text-white hover:bg-[var(--main)]">5</a>
                     <a href="#"
-                         class="px-4 py-1.5 outline-1 outline-gray-200 hover:text-white hover:bg-[var(--main)] rounded-e-md">next</a>
+                         class="px-4 py-1.5 bg-white outline-1 outline-gray-200 hover:text-white hover:bg-[var(--main)] rounded-e-md">next</a>
                </div>
           </div>
      </main>
@@ -210,7 +210,7 @@
                     <td>${i.email}</td>
                     <td>${i.role}</td>
                     <td>${i.phone}</td>
-                    <td>
+                    <td class="flex gap-2">
                          <button class="bg-red-500 hover:bg-red-600 text-white px-3 p-1 rounded-sm">Delete</button>
                          <button class="bg-green-500 hover:bg-green-600 text-white px-3 p-1 rounded-sm">Edit</button>
                          <button class="bg-amber-500 hover:bg-amber-600 text-white px-3 p-1 rounded-sm">Detail</button>
